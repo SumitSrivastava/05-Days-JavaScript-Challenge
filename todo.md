@@ -20,9 +20,9 @@
 
 - Show the marker based on real word store DONE
 
-- Show the info window
+- Show the info window DONE
 
-- MAYBE : Show the info window when you click on the individual store
+- Show the info window when you click on the individual store In Progress
 
-- MAYBE: Add a beautiful transistion on the hover of the individual store
+- Add a beautiful transistion on the hover of the individual store In Progress
 
