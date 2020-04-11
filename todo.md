@@ -18,11 +18,11 @@
 
 - Show all the stores in the stores list based on real world data DONE
 
--Show the marker based on real word store DONE
+- Show the marker based on real word store DONE
 
 - Show the info window
 
--MAYBE : Show the info window when you click on the individual store
+- MAYBE : Show the info window when you click on the individual store
 
--MAYBE: Add a beautiful transistion on the hover of the individual store
+- MAYBE: Add a beautiful transistion on the hover of the individual store
 
