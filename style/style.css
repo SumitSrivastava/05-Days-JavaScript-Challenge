@@ -126,3 +126,26 @@ left: 100px;
     justify-content: center;
     align-items: center;
 }
+
+.store-info-window{
+    min-width: 300px;
+    font-size: 15px;
+    padding: 8px;
+}
+
+.store-info-name{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0,0,0,.87);
+}
+
+.store-info-status{
+    margin-top: 6px;
+    border-bottom: 1px solid;
+    color: #0000008c;
+    padding-bottom: 6px;
+}
+
+.store-info-address, .store-info-phone {
+    margin-top: 6px;
+}
