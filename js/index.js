@@ -15,13 +15,13 @@ function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: losAngeles,
         zoom: 11,
-        mapTypeId: 'roadmap'
+        //mapTypeId: 'roadmap'
         
         styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
-            {
+           /* {
               featureType: 'administrative.locality',
               elementType: 'labels.text.fill',
               stylers: [{color: '#d59563'}]
@@ -95,7 +95,7 @@ function initMap() {
               featureType: 'water',
               elementType: 'labels.text.stroke',
               stylers: [{color: '#17263c'}]
-            }
+            }*/
           ]
     });
    
