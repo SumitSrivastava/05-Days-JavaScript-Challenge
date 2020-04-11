@@ -98,30 +98,19 @@ function initMap() {
        // mapTypeId: 'roadmap',
     });
     
-    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-    var icons = {
-     parking: {
-    icon: iconBase + 'parking_lot_maps.png'
-    },
-    library: {
-    icon: iconBase + 'library_maps.png'
-    },
-    info: {
-    icon: iconBase + 'info-i_maps.png'
-    }
-};
+    var goldStar = {
+          fillColor: 'yellow',
+          fillOpacity: 0.8,
+          scale: 1,
+          strokeColor: 'gold',
+          strokeWeight: 14
+        };
+    
       
     infoWindow = new google.maps.InfoWindow();
     showStoreMarkers();   
 }
 
-function addMarker(feature) {
-    var marker = new google.maps.Marker({
-      position: feature.position,
-      icon: icons[feature.type].icon,
-      map: map
-    });
-  }
   
 function displayStores(){
     var storesHtml = '';
@@ -173,6 +162,7 @@ function createMarker(latlng,name,address,index){
           var marker = new google.maps.Marker({
             map: map,
             position: latlng,
+            icon: goldStar,
             label: index.toString()
           });
             google.maps.event.addListener(marker, 'click', function() {
