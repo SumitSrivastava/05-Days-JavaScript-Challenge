@@ -95,16 +95,9 @@ function initMap() {
               stylers: [{color: '#17263c'}]
             }
           ]
-       // mapTypeId: 'roadmap',
+       mapTypeId: 'roadmap'
     });
-    
-    var goldStar = {
-          fillColor: 'yellow',
-          fillOpacity: 0.8,
-          scale: 1,
-          strokeColor: 'gold',
-          strokeWeight: 14
-        };
+   
     
       
     infoWindow = new google.maps.InfoWindow();
@@ -162,7 +155,6 @@ function createMarker(latlng,name,address,index){
           var marker = new google.maps.Marker({
             map: map,
             position: latlng,
-            icon: goldStar,
             label: index.toString()
           });
             google.maps.event.addListener(marker, 'click', function() {
