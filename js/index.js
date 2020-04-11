@@ -160,14 +160,17 @@ function createMarker(latlng,name,address,openStatusText,phoneNumber,index){
         </div>
         
         <div class="store-info-status">
+            <i class="far fa-clock"></i>
             ${openStatusText}
         </div>
         
         <div class="store-info-address">
+            <i class="fas fa-location-arrow"></i>
             ${address}
         </div>
         
         <div class="store-info-phone">
+            <i class="fas fa-phone-alt"></i>
             ${phoneNumber}
         </div>
     </div>
