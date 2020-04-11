@@ -15,7 +15,7 @@ function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: losAngeles,
         zoom: 11,
-        //mapTypeId: 'roadmap',
+        mapTypeId: 'roadmap',
         
         styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -99,15 +99,6 @@ function initMap() {
           ]
     });
    
-    var marker = new google.maps.Marker({
-          position: map.getCenter(),
-          icon: {
-            path: google.maps.SymbolPath.CIRCLE,
-            scale: 10
-          },
-          draggable: true,
-          map: map
-        });
       
     infoWindow = new google.maps.InfoWindow();
     showStoreMarkers();   
