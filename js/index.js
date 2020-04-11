@@ -15,6 +15,8 @@ function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: losAngeles,
         zoom: 11,
+        mapTypeId: 'roadmap'
+        
         styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
@@ -95,7 +97,6 @@ function initMap() {
               stylers: [{color: '#17263c'}]
             }
           ]
-       mapTypeId: 'roadmap'
     });
    
     
