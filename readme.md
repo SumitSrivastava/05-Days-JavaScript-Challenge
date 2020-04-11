@@ -1,15 +1,9 @@
-## Design Link
+## Wireframe
+https://drive.google.com/file/d/1_zIngm5Qcn6cdVaQ4IQQP4oNqSvJADjb/view?usp=sharing
 
-https://www.figma.com/file/HuauCfrLa39DV0lK76LLZb/Google-Maps?node-id=0%3A2
-
-## Google Maps API Key
-
-AIzaSyCcwazb-T7zvceyA4VLWVB-eXvwj-XEUIA
-
-**WARNING**
-DO NOT SHARE IT WITH ANYONE
+## Google Maps API
+https://developers.google.com/maps/documentation/javascript/tutorial
 
 ## FontAwesome Link
-
 https://kit.fontawesome.com/c939d0e917.js
 
