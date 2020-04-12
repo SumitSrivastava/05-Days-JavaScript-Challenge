@@ -102,6 +102,7 @@ function initMap() {
       
     infoWindow = new google.maps.InfoWindow();
     showStoreMarkers();   
+    google.maps.event.trigger(markers[0], 'click');
 }
 
   
