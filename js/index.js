@@ -100,15 +100,28 @@ function initMap() {
    
       
     infoWindow = new google.maps.InfoWindow();
-    displayStores();
-    showStoreMarkers();   
-    setOnClickListener();
-    
+    searchStores();
 }
 
 function searchStores(){
+    var foundStores =  [];
     var zipCode = document.getElementById('zip-code-input').value;
-
+    
+    if(zipCode){
+        for(var store of stores){
+            var postal = store['address']['postalCode'].substring(0, 5);
+            if(postal == zipCode){
+                foundStores.push(store);
+             }
+           }
+    } else {
+        foundStores = stores;
+    }
+    
+ displayStores(foundStores);
+ showStoreMarkers(foundStores); 
+ setOnClickListener();
+    
 }
 function setOnClickListener(){
     var storeElements = document.querySelectorAll('.store-container');
@@ -119,7 +132,7 @@ function setOnClickListener(){
     })
 }
   
-function displayStores(){
+function displayStores(stores){
     var storesHtml = '';
     for (var [index,store] of stores.entries()){
         var address = store ['addressLines'];
@@ -149,7 +162,7 @@ function displayStores(){
     }
 }
 
-function showStoreMarkers(){
+function showStoreMarkers(stores){
     var bounds = new google.maps.LatLngBounds();
     for (var [index,store] of stores.entries()){
         var latlng = new google.maps.LatLng(
