@@ -59,6 +59,10 @@ left: 100px;
     color: white;
 }
 
+.search i{
+cursor: pointer;
+}
+
 .stores-list-container{
     width: 250px;
     bottom: 40px;
