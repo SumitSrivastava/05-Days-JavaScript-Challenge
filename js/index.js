@@ -1,5 +1,4 @@
 window.onload = () => {
-    displayStores();
 }
 
 var map;
@@ -101,10 +100,21 @@ function initMap() {
    
       
     infoWindow = new google.maps.InfoWindow();
+    displayStores();
     showStoreMarkers();   
-    google.maps.event.trigger(markers[0], 'click');
+    setOnClickListener();
+    
 }
 
+
+function setOnClickListener(){
+    var storeElements = document.querySelectorAll('.store-container');
+    storeElements.forEach(function (elem,index){
+        elem.addEventListener('click',function (){
+            new google.maps.event.trigger(markers[index], 'click'); 
+        })
+    })
+}
   
 function displayStores(){
     var storesHtml = '';
