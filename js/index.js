@@ -106,7 +106,9 @@ function initMap() {
     
 }
 
+function searchStores(){
 
+}
 function setOnClickListener(){
     var storeElements = document.querySelectorAll('.store-container');
     storeElements.forEach(function (elem,index){
