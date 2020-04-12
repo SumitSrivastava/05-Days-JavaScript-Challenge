@@ -168,3 +168,14 @@ cursor: pointer;
     display: flex;
     margin-right: 8px;
 }
+
+.store-container-background{
+display: flex;
+flex-grow: 1;
+margin-top: 12px;
+margin-bottom: 12px;
+background-color: #ccc;
+border-radius: 18px;
+padding-left: 8px;
+padding-right: 8px;
+}
