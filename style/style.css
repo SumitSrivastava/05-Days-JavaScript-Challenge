@@ -172,6 +172,9 @@ cursor: pointer;
 .store-container-background{
 display: flex;
 flex-grow: 1;
+}
+
+.store-container-background:hover{
 margin-top: 12px;
 margin-bottom: 12px;
 background-color: #ccc;
