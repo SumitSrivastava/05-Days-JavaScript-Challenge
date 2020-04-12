@@ -107,6 +107,7 @@ function initMap() {
 }
 
 function searchStores(){
+    var zipCode = document.getElementById('zip-code-input').value;
 
 }
 function setOnClickListener(){
