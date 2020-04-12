@@ -118,11 +118,21 @@ function searchStores(){
         foundStores = stores;
     }
     
+ clearLocations();
  displayStores(foundStores);
  showStoreMarkers(foundStores); 
  setOnClickListener();
     
 }
+
+function clearLocations(){
+         infoWindow.close();
+         for (var i = 0; i < markers.length; i++) {
+           markers[i].setMap(null);
+         }
+         markers.length = 0;
+       }
+
 function setOnClickListener(){
     var storeElements = document.querySelectorAll('.store-container');
     storeElements.forEach(function (elem,index){
